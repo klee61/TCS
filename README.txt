@@ -66,8 +66,8 @@ uni_prob - Probabitliy of each hyper-rectangulars.
 uni_space - Boundary of each hyper-rectangulars.
 y.out - length(tau)x4 measurement matrix; 
 	For each tau value, the coverage test result (1st column), 
-        coverage estimation (2nd column), false positive (3rd column) 
-        and false negative (4th column) are estimated. Here 0 means the coverage test passes.
+        coverage estimation (2nd column), false positive conditioned on f.test<low.limit (3rd column) 
+        and false negative on f.test>=low.limit (4th column) are estimated. Here 0 means the coverage test passes.
 
 -------------------------------------------------------------------------------
 cred.est2(test,train.sim,train,tau,alpha,p.alpha)
@@ -92,5 +92,5 @@ uni_prob - Probabitliy of each hyper-rectangulars.
 uni_space - Boundary of each hyper-rectangulars.
 y.out - length(tau)x4 measurement matrix; 
 	For each tau value, the coverage test result (1st column), 
-        coverage estimation (2nd column), false positive (3rd column) 
-        and false negative (4th column) are estimated. Here 0 means the coverage test passes.
+        coverage estimation (2nd column), false positive conditioned on f.test<low.limit (3rd column) 
+        and false negative conditioned on on f.test>=low.limit (4th column) are estimated. Here 0 means the coverage test passes.
