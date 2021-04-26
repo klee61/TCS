@@ -1,3 +1,5 @@
+#This code constructs a DET and a credible set for the Banana shaped distribution in Section 5.2. 
+
 rm(list = ls())
 library(ks); 
 library(HDInterval)
